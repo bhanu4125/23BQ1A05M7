@@ -1,0 +1,18 @@
+// routes/notification.routes.js
+
+const { Router } = require("express");
+const ctrl = require("../controllers/notification.controller");
+
+const router = Router();
+
+// order matters - read-all before /:id otherwise express matches "read-all" as an id
+router.get("/unread-count", ctrl.unreadCount);
+router.patch("/read-all",   ctrl.markAllRead);
+
+router.get("/",       ctrl.getAll);
+router.get("/:id",    ctrl.getById);
+router.post("/",      ctrl.create);
+router.patch("/:id/read", ctrl.markRead);
+router.delete("/:id", ctrl.remove);
+
+module.exports = router;
