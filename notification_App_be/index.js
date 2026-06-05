@@ -4,9 +4,9 @@ require("dotenv").config();
 const express = require("express");
 const cors    = require("cors");
 
-const { requestLogger }    = require("./middleware/requestLogger");
-const notificationRoutes   = require("./routes/notification.routes");
-const { Log }              = require("./config/logger");
+const { requestLogger }    = require("./requestLogger");
+const notificationRoutes   = require("./notificationroutesjs");
+const { Log }              = require("./logger");
 
 const app  = express();
 const PORT = process.env.PORT || 5000;

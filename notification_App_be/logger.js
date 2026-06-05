@@ -1,4 +1,4 @@
-const { initLogger, Log } = require("../../logging_middleware/src");
+const { initLogger, Log } = require("../logging_middleware/src");
 require("dotenv").config();
  
 initLogger({

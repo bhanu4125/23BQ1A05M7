@@ -1,7 +1,7 @@
-// middleware/requestLogger.js
+// requestLogger.js
 // logs every incoming request + response status after it finishes
 
-const { Log } = require("../config/logger");
+const { Log } = require("./logger");
 
 function requestLogger(req, res, next) {
   const start = Date.now();
