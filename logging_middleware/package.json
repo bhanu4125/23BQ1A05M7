@@ -1,0 +1,9 @@
+{
+  "name": "logging-middleware",
+  "version": "1.0.0",
+  "description": "sends logs to the eval server",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo no tests yet"
+  }
+}
